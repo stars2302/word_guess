@@ -1,5 +1,7 @@
 body {padding: 5px 30px;}
 
+
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -27,3 +29,5 @@ body {padding: 5px 30px;}
   border: 1px solid #ebebeb;
   font-size: 24px;
 }
+
+.hidden {display: none;}

@@ -9,7 +9,7 @@ function App() {
       <h1>Welcome to Hangman!</h1>
       <p>Do you want to play the game?</p>
       <div>
-        <GameBoard secretWord="React"/>
+        <GameBoard secretWord="React" maxError={6}/>
       </div>
     </div>
   );
