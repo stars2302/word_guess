@@ -1,14 +1,18 @@
 import LetterGrid from "./LetterGrid";
 import ButtonGrid from "./ButtonGrid";
+import { useState } from "react";
 
 const GameBoard = ({secretWord})=>{
-  const letterGuessedHandler = (letter)=>{
-
-  }
+  const [guessedLetters,setGuessedLetters] = useState([]);
   
+  const letterGuessedHandler = (letter)=>{
+    let val = letter.toLowerCase();
+    setGuessedLetters([...guessedLetters,val]);
+  }
+
   return (
     <>
-      <LetterGrid secretWord={secretWord} guessedLetters={['a','b','r']}/>
+      <LetterGrid secretWord={secretWord} guessedLetters={guessedLetters}/>
       <ButtonGrid letterGuessed={letterGuessedHandler}/>
     </>
   )
