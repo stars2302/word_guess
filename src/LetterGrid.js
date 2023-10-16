@@ -11,7 +11,7 @@ const LetterGrid = ({secretWord, guessedLetters})=>{
                   });
   
   return (
-    <>{letters}</>
+    <div className="letters">{letters}</div>
   )
 }
 

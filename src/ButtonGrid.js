@@ -16,7 +16,7 @@ const ButtonGrid = ({secretWord, guessedLetters})=>{
 
   
   return (
-    <>{buttons}</>
+    <div className="buttons">{buttons}</div>
   )
 }
 
