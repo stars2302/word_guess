@@ -7,7 +7,8 @@ const GameBoard = ({secretWord})=>{
   
   const letterGuessedHandler = (letter)=>{
     let val = letter.toLowerCase();
-    setGuessedLetters([...guessedLetters,val]);
+    // setGuessedLetters([...guessedLetters,val]);
+    setGuessedLetters(prev=>[...prev,val]);
   }
 
   return (
