@@ -3,7 +3,7 @@ import LetterGrid from "./LetterGrid";
 const GameBoard = ({secretWord})=>{
   return (
     <>
-      <LetterGrid secretWord={secretWord}/>
+      <LetterGrid secretWord={secretWord} guessedLetters={['a','b','r']}/>
     </>
   )
 }
