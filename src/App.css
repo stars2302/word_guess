@@ -11,6 +11,8 @@ body {padding: 5px 30px;}
   font-size: 24px;
 }
 
+.buttons  button.guessed {display: none;}
+
 .letters {
   display: flex;
   margin-bottom: 20px;

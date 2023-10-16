@@ -1,7 +1,7 @@
 
 import Buttons from "./Button";
 
-const ButtonGrid = ({secretWord, guessedLetters})=>{
+const ButtonGrid = ({secretWord, guessedLetters,letterGuessed})=>{
   let letters = [
     'A','B','C','D','E','F','G','H',
     'I','J','K','L','M','N','O','P',
@@ -11,7 +11,7 @@ const ButtonGrid = ({secretWord, guessedLetters})=>{
 
   let buttons = letters.map((letter,idx)=>
     // return <button key={idx}>{letter}</button>
-    <Buttons key={idx} value={letter} />
+    <Buttons key={idx} value={letter} onClick={letterGuessed}/>
   )
 
   
